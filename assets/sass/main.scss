@@ -1,0 +1,61 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #5A7070;
+  // background: purple;
+}
+
+nav {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  align-self: center;
+  justify-content: flex-end;
+  padding: 15px;
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 0 10px;
+  }
+}
+
+#topSection {
+  position: relative;
+  height: 100vh;
+  .blurredbg{
+    background-image: linear-gradient(45deg, rgba(25,124,127,0.8) 0%,rgba(16,82,84,0) 34%,rgba(9,46,47,0) 63%,rgba(0,1,1,1) 99%,rgba(0,0,0,1) 100%), url('/img/thebio.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+#bio {
+  display: flex;
+  background: black;
+
+
+  p{
+    width: 50%;
+    color: white;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    padding: 50px;
+  }
+  .logoCentered{
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

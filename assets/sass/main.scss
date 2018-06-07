@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: #5A7070;
   // background: purple;
 }
@@ -20,7 +20,7 @@ nav {
   a {
     color: white;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 300;
     padding: 0 10px;
   }
@@ -38,26 +38,139 @@ nav {
     z-index: 1;
   }
 }
-
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
 #bio {
-  display: flex;
   background: #050608;
   padding: 50px 0;
   height: 100vh;
-
+  position: relative;
+  z-index: 3;
+  padding: 100px 0;
+  font-family: 'Source Code Pro', monospace;
+  .container{
+    display: flex;
+  }
   p{
     width: 50%;
     color: white;
-    line-height: 1.5;
-    font-size: 1rem;
+    line-height: 1.8;
+    font-size: 0.9rem;
     padding: 0 50px;
   }
-  .logoCentered{
+  .logoCentered {
 
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 50px;
+  }
+}
+
+#media {
+  padding: 100px 0;
+  background-image: url("/img/media.jpg");
+  background-size: cover;
+  filter: brightness(1);
+
+
+  .title{
+    background: #CB6237;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 3px;
+  }
+.videos {
+  padding: 80px 50px 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 40px;
+    .video{
+      border-radius: 4px;
+      overflow: hidden;
+      height: 300px;
+      -webkit-box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.75);
+      -moz-box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.75);
+      box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.75);
+      iframe{
+        height: 100%;
+      }
+    }
+  }
+}
+
+#music {
+  padding: 80px 0;
+  background: linear-gradient(45deg, rgba(131,42,87,1) 0%, rgba(101,130,141,1) 89%);
+  color: white;
+  text-shadow: 2px 3px black;
+  border-top: solid;
+  .container{
+    display: flex;
+    padding: 0 50px;
+  }
+
+  .info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title{
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+    .singles {
+      width: 400px;
+      display: grid;
+      grid-template-columns: 50% 50%;
+
+      li {
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+    .logos{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
+      margin-top: 20px;
+      margin-left: auto;
+      img{
+        width: 40%;
+
+      }
+    }
+  }
+  .albumCover{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      width: 50%;
+      border: solid;
+      border-width: thin;
+    }
   }
 }

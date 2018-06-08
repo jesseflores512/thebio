@@ -41,7 +41,7 @@ gulp.task('browser-sync', ['styles'], function () {
   browserSync.init({
         server: './public',
         notify: false,
-        open: false //change this to true if you want the broser to open automatically 
+        open: false //change this to true if you want the broser to open automatically
     });
 })
 
@@ -53,6 +53,13 @@ gulp.task('webpack', (cb) => {
     });
 })
 
+gulp.task('serveprod', function() {
+  connect.server({
+    root: [your_project_path],
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
+});
 // gulp.task('webpack', shell.task([
 //   'webpack'
 // ]))

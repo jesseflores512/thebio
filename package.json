@@ -42,6 +42,7 @@
     "production": "./node_modules/.bin/webpack -p",
     "watch": "gulp",
     "sass": "gulp styles",
+    "start": "npm run watch",
     "js": "gulp webpack"
   },
   "devDependencies": {

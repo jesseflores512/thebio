@@ -1,1 +1,1 @@
-web: node inedex.js
+web: node server/server.js

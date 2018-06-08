@@ -45,11 +45,10 @@ nav {
 }
 #bio {
   background: #050608;
-  padding: 50px 0;
+  padding: 100px 0;
   height: 100vh;
   position: relative;
   z-index: 3;
-  padding: 100px 0;
   font-family: 'Source Code Pro', monospace;
   .container{
     display: flex;
@@ -68,6 +67,9 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 0 50px;
+    img{
+      margin-bottom: auto;
+    }
   }
 }
 
@@ -202,4 +204,76 @@ footer {
     color: white;
     opacity: 0.9;
   }
+}
+
+@media only screen and (max-width: 740px) {
+  #bio{
+    padding: 40px 0;
+    .container{
+      display: inline;
+    }
+    p {
+      padding: 0 40px;
+      width: 100%;
+      font-size: 0.7rem;
+    }
+    .logoCentered {
+      img{
+        padding-top: 20px;
+        width: 60%;
+      }
+
+    }
+  }
+
+  #media {
+    .videos{
+      display: block;
+      padding: 30px;
+      .video{
+        padding-top: 10px;
+      }
+    }
+  }
+
+.music {
+  .container{
+    display: block;
+  }
+  .albumCover{
+    margin-left: auto;
+    margin-right: auto;
+
+    img{
+      align-items: stretch;
+      width: 110%;
+    }
+  }
+  .info{
+    width: 100%;
+    .title{
+      margin-bottom: 50px;
+    }
+    .singles{
+      li{
+        display: none;
+      }
+    }
+    .logos{
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+        img{
+          padding: 10px;
+          width: 80%;
+        }
+
+      }
+    }
+  }
+
+  #picture{
+    background-image: linear-gradient(to bottom, rgba(232,232,232,0) 0%,rgba(172,172,172,0) 26%,rgba(0,0,0,0.8) 100%), url('/img/jose.jpg');
+  }
+
 }
